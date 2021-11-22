@@ -24,6 +24,9 @@
 		ED2AE485274C003D00D6740F /* RegistrationPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */; };
 		ED2AE487274C050C00D6740F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE486274C050C00D6740F /* LoginViewController.swift */; };
 		ED2AE489274C060800D6740F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE488274C060800D6740F /* LoginCoordinator.swift */; };
+		ED2AE48B274C07D200D6740F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE48A274C07D200D6740F /* MainViewController.swift */; };
+		ED2AE48D274C0A9700D6740F /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE48C274C0A9700D6740F /* ActivityService.swift */; };
+		ED2AE490274C0AC400D6740F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE48F274C0AC400D6740F /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewController.swift; sourceTree = "<group>"; };
 		ED2AE486274C050C00D6740F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED2AE488274C060800D6740F /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		ED2AE48A274C07D200D6740F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ED2AE48C274C0A9700D6740F /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		ED2AE48F274C0AC400D6740F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		ED2AE455274BEB1000D6740F /* CoordinationControlWorkApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED2AE48E274C0AB400D6740F /* Model */,
 				ED2AE477274BF77100D6740F /* Services */,
 				ED2AE476274BF76100D6740F /* Coordinators */,
 				ED2AE473274BF69F00D6740F /* Base */,
@@ -121,6 +128,7 @@
 				ED2AE47C274BFA6500D6740F /* RegistrationLoginViewController.swift */,
 				ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */,
 				ED2AE486274C050C00D6740F /* LoginViewController.swift */,
+				ED2AE48A274C07D200D6740F /* MainViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -157,8 +165,17 @@
 			isa = PBXGroup;
 			children = (
 				ED2AE478274BF78600D6740F /* AuthorizationService.swift */,
+				ED2AE48C274C0A9700D6740F /* ActivityService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		ED2AE48E274C0AB400D6740F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED2AE48F274C0AC400D6740F /* Activity.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2AE490274C0AC400D6740F /* Activity.swift in Sources */,
 				ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */,
 				ED2AE457274BEB1000D6740F /* AppDelegate.swift in Sources */,
 				ED2AE489274C060800D6740F /* LoginCoordinator.swift in Sources */,
@@ -284,10 +302,12 @@
 				ED2AE47D274BFA6500D6740F /* RegistrationLoginViewController.swift in Sources */,
 				ED2AE479274BF78600D6740F /* AuthorizationService.swift in Sources */,
 				ED2AE459274BEB1000D6740F /* SceneDelegate.swift in Sources */,
+				ED2AE48B274C07D200D6740F /* MainViewController.swift in Sources */,
 				ED2AE485274C003D00D6740F /* RegistrationPasswordViewController.swift in Sources */,
 				ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */,
 				ED2AE47F274BFC1900D6740F /* ProfileCoordinator.swift in Sources */,
 				ED2AE487274C050C00D6740F /* LoginViewController.swift in Sources */,
+				ED2AE48D274C0A9700D6740F /* ActivityService.swift in Sources */,
 				ED2AE47B274BF85C00D6740F /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
