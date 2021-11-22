@@ -17,6 +17,11 @@
 		ED2AE475274BF6BA00D6740F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE474274BF6BA00D6740F /* Coordinator.swift */; };
 		ED2AE479274BF78600D6740F /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE478274BF78600D6740F /* AuthorizationService.swift */; };
 		ED2AE47B274BF85C00D6740F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */; };
+		ED2AE47D274BFA6500D6740F /* RegistrationLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE47C274BFA6500D6740F /* RegistrationLoginViewController.swift */; };
+		ED2AE47F274BFC1900D6740F /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE47E274BFC1900D6740F /* ProfileCoordinator.swift */; };
+		ED2AE481274BFCCD00D6740F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE480274BFCCD00D6740F /* FlowController.swift */; };
+		ED2AE483274BFE2E00D6740F /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE482274BFE2E00D6740F /* RegistrationCoordinator.swift */; };
+		ED2AE485274C003D00D6740F /* RegistrationPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		ED2AE474274BF6BA00D6740F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		ED2AE478274BF78600D6740F /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		ED2AE47C274BFA6500D6740F /* RegistrationLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationLoginViewController.swift; sourceTree = "<group>"; };
+		ED2AE47E274BFC1900D6740F /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		ED2AE480274BFCCD00D6740F /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		ED2AE482274BFE2E00D6740F /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				ED2AE46B274BEBAA00D6740F /* ProfileViewController.swift */,
+				ED2AE47C274BFA6500D6740F /* RegistrationLoginViewController.swift */,
+				ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -120,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				ED2AE474274BF6BA00D6740F /* Coordinator.swift */,
+				ED2AE480274BFCCD00D6740F /* FlowController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -128,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */,
+				ED2AE47E274BFC1900D6740F /* ProfileCoordinator.swift */,
+				ED2AE482274BFE2E00D6740F /* RegistrationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -257,9 +272,14 @@
 				ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */,
 				ED2AE457274BEB1000D6740F /* AppDelegate.swift in Sources */,
 				ED2AE475274BF6BA00D6740F /* Coordinator.swift in Sources */,
+				ED2AE483274BFE2E00D6740F /* RegistrationCoordinator.swift in Sources */,
+				ED2AE481274BFCCD00D6740F /* FlowController.swift in Sources */,
+				ED2AE47D274BFA6500D6740F /* RegistrationLoginViewController.swift in Sources */,
 				ED2AE479274BF78600D6740F /* AuthorizationService.swift in Sources */,
 				ED2AE459274BEB1000D6740F /* SceneDelegate.swift in Sources */,
+				ED2AE485274C003D00D6740F /* RegistrationPasswordViewController.swift in Sources */,
 				ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */,
+				ED2AE47F274BFC1900D6740F /* ProfileCoordinator.swift in Sources */,
 				ED2AE47B274BF85C00D6740F /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
