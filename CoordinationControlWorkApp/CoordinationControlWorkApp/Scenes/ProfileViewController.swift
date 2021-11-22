@@ -8,7 +8,14 @@
 import UIKit
 import SnapKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, FlowController {
+
+    // MARK: - Nested types
+
+    enum AuthorizationType {
+        case signIn
+        case signUp
+    }
 
     // MARK: - Constants
 
@@ -18,17 +25,21 @@ class ProfileViewController: UIViewController {
         static let stackViewHorizontalInset: CGFloat = 40
     }
 
-    // MARK: - Instance methods
+    // MARK: - Instance properties
+
+    var completionHandler: ((AuthorizationType) -> Void)?
 
     private let signInButton: OutlinedButton = {
         let button = OutlinedButton()
         button.setTitle("sign in", for: .normal)
+        button.addTarget(self, action: #selector(signInButtonOnTap), for: .touchUpInside)
         return button
     }()
 
     private let signUpButton: UIButton = {
         let button = OutlinedButton()
         button.setTitle("sign up", for: .normal)
+        button.addTarget(self, action: #selector(signUpButtonOnTap), for: .touchUpInside)
         return button
     }()
 
@@ -67,5 +78,15 @@ class ProfileViewController: UIViewController {
             make.centerY.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(Constants.stackViewHorizontalInset)
         }
+    }
+
+    // MARK: - Actions
+
+    @objc private func signInButtonOnTap() {
+        completionHandler?(.signIn)
+    }
+
+    @objc private func signUpButtonOnTap() {
+        completionHandler?(.signUp)
     }
 }
