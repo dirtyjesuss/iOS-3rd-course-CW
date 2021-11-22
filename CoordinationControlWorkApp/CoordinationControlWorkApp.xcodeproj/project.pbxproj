@@ -14,6 +14,9 @@
 		ED2AE463274BEB1100D6740F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2AE461274BEB1100D6740F /* LaunchScreen.storyboard */; };
 		ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE46B274BEBAA00D6740F /* ProfileViewController.swift */; };
 		ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE471274BF48900D6740F /* OutlinedButton.swift */; };
+		ED2AE475274BF6BA00D6740F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE474274BF6BA00D6740F /* Coordinator.swift */; };
+		ED2AE479274BF78600D6740F /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE478274BF78600D6740F /* AuthorizationService.swift */; };
+		ED2AE47B274BF85C00D6740F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		ED2AE464274BEB1100D6740F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2AE46B274BEBAA00D6740F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ED2AE471274BF48900D6740F /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
+		ED2AE474274BF6BA00D6740F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		ED2AE478274BF78600D6740F /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 		ED2AE455274BEB1000D6740F /* CoordinationControlWorkApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED2AE477274BF77100D6740F /* Services */,
+				ED2AE476274BF76100D6740F /* Coordinators */,
+				ED2AE473274BF69F00D6740F /* Base */,
 				ED2AE470274BF47A00D6740F /* Views */,
 				ED2AE46A274BEB6A00D6740F /* Scenes */,
 				ED2AE456274BEB1000D6740F /* AppDelegate.swift */,
@@ -105,6 +114,30 @@
 				ED2AE471274BF48900D6740F /* OutlinedButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ED2AE473274BF69F00D6740F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ED2AE474274BF6BA00D6740F /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ED2AE476274BF76100D6740F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		ED2AE477274BF77100D6740F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED2AE478274BF78600D6740F /* AuthorizationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +256,11 @@
 			files = (
 				ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */,
 				ED2AE457274BEB1000D6740F /* AppDelegate.swift in Sources */,
+				ED2AE475274BF6BA00D6740F /* Coordinator.swift in Sources */,
+				ED2AE479274BF78600D6740F /* AuthorizationService.swift in Sources */,
 				ED2AE459274BEB1000D6740F /* SceneDelegate.swift in Sources */,
 				ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */,
+				ED2AE47B274BF85C00D6740F /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
