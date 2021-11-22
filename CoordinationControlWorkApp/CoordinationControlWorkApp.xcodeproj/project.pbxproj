@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD976B471BBC3B02A3DFC366 /* Pods_CoordinationControlWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6774B983D1EF92FDB6039161 /* Pods_CoordinationControlWorkApp.framework */; };
 		ED2AE457274BEB1000D6740F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE456274BEB1000D6740F /* AppDelegate.swift */; };
 		ED2AE459274BEB1000D6740F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE458274BEB1000D6740F /* SceneDelegate.swift */; };
 		ED2AE460274BEB1100D6740F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2AE45F274BEB1100D6740F /* Assets.xcassets */; };
 		ED2AE463274BEB1100D6740F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2AE461274BEB1100D6740F /* LaunchScreen.storyboard */; };
 		ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE46B274BEBAA00D6740F /* ProfileViewController.swift */; };
+		ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE471274BF48900D6740F /* OutlinedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		418074B454561526CCDCEEFB /* Pods-CoordinationControlWorkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinationControlWorkApp.release.xcconfig"; path = "Target Support Files/Pods-CoordinationControlWorkApp/Pods-CoordinationControlWorkApp.release.xcconfig"; sourceTree = "<group>"; };
+		4EB8FE37DA774762F43BF094 /* Pods-CoordinationControlWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinationControlWorkApp.debug.xcconfig"; path = "Target Support Files/Pods-CoordinationControlWorkApp/Pods-CoordinationControlWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6774B983D1EF92FDB6039161 /* Pods_CoordinationControlWorkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoordinationControlWorkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2AE453274BEB1000D6740F /* CoordinationControlWorkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinationControlWorkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2AE456274BEB1000D6740F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED2AE458274BEB1000D6740F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		ED2AE462274BEB1100D6740F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2AE464274BEB1100D6740F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2AE46B274BEBAA00D6740F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ED2AE471274BF48900D6740F /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD976B471BBC3B02A3DFC366 /* Pods_CoordinationControlWorkApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2267FCA7F7D552DDEA72CE2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EB8FE37DA774762F43BF094 /* Pods-CoordinationControlWorkApp.debug.xcconfig */,
+				418074B454561526CCDCEEFB /* Pods-CoordinationControlWorkApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5EB2253AA8ADA2EB2A211BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6774B983D1EF92FDB6039161 /* Pods_CoordinationControlWorkApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED2AE44A274BEB1000D6740F = {
 			isa = PBXGroup;
 			children = (
 				ED2AE455274BEB1000D6740F /* CoordinationControlWorkApp */,
 				ED2AE454274BEB1000D6740F /* Products */,
+				2267FCA7F7D552DDEA72CE2C /* Pods */,
+				5EB2253AA8ADA2EB2A211BB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		ED2AE455274BEB1000D6740F /* CoordinationControlWorkApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED2AE470274BF47A00D6740F /* Views */,
 				ED2AE46A274BEB6A00D6740F /* Scenes */,
 				ED2AE456274BEB1000D6740F /* AppDelegate.swift */,
 				ED2AE458274BEB1000D6740F /* SceneDelegate.swift */,
@@ -72,6 +99,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		ED2AE470274BF47A00D6740F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED2AE471274BF48900D6740F /* OutlinedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED2AE467274BEB1100D6740F /* Build configuration list for PBXNativeTarget "CoordinationControlWorkApp" */;
 			buildPhases = (
+				7BB39EC08D185961A5099508 /* [CP] Check Pods Manifest.lock */,
 				ED2AE44F274BEB1000D6740F /* Sources */,
 				ED2AE450274BEB1000D6740F /* Frameworks */,
 				ED2AE451274BEB1000D6740F /* Resources */,
+				49C3A7005AD1A6D1204C9418 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +174,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49C3A7005AD1A6D1204C9418 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoordinationControlWorkApp/Pods-CoordinationControlWorkApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoordinationControlWorkApp/Pods-CoordinationControlWorkApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoordinationControlWorkApp/Pods-CoordinationControlWorkApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB39EC08D185961A5099508 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoordinationControlWorkApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2AE44F274BEB1000D6740F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +224,7 @@
 				ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */,
 				ED2AE457274BEB1000D6740F /* AppDelegate.swift in Sources */,
 				ED2AE459274BEB1000D6740F /* SceneDelegate.swift in Sources */,
+				ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +360,7 @@
 		};
 		ED2AE468274BEB1100D6740F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB8FE37DA774762F43BF094 /* Pods-CoordinationControlWorkApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,6 +389,7 @@
 		};
 		ED2AE469274BEB1100D6740F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418074B454561526CCDCEEFB /* Pods-CoordinationControlWorkApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
