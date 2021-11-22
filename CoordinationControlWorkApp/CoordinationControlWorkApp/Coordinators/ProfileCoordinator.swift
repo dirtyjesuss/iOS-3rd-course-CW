@@ -60,6 +60,6 @@ class ProfileCoordinator: Coordinator {
             }
         }
 
-        navigationController.pushViewController(scene, animated: true)
+        navigationController.setViewControllers([scene], animated: true)
     }
 }

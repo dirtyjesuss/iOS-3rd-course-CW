@@ -50,5 +50,15 @@ class AppCoordinator: Coordinator {
     }
 
     private func showMainFlow() {
+        let scene = MainViewController()
+        scene.service = ActivityService()
+        scene.completionHandler = { [weak self] _ in
+            guard let self = self else { return }
+
+            self.authorizationService.setIsAuthorized(false)
+            self.showAuthorizationFlow()
+        }
+
+        navigationController.setViewControllers([scene], animated: true)
     }
 }
