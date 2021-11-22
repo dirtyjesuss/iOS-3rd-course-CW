@@ -15,7 +15,7 @@ class RegistrationLoginViewController: UIViewController, FlowController {
         static let buttonHeight: CGFloat = 30
         static let buttonHorizontalInset: CGFloat = 60
         static let buttonTopOffset: CGFloat = 10
-        static let loginTextFieldHorizontalInset: CGFloat = 40
+        static let loginTextFieldHorizontalInset: CGFloat = 60
         static let loginTextFieldHeight: CGFloat = 50
     }
 

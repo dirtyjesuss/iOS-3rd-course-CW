@@ -22,6 +22,8 @@
 		ED2AE481274BFCCD00D6740F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE480274BFCCD00D6740F /* FlowController.swift */; };
 		ED2AE483274BFE2E00D6740F /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE482274BFE2E00D6740F /* RegistrationCoordinator.swift */; };
 		ED2AE485274C003D00D6740F /* RegistrationPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */; };
+		ED2AE487274C050C00D6740F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE486274C050C00D6740F /* LoginViewController.swift */; };
+		ED2AE489274C060800D6740F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2AE488274C060800D6740F /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		ED2AE480274BFCCD00D6740F /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		ED2AE482274BFE2E00D6740F /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPasswordViewController.swift; sourceTree = "<group>"; };
+		ED2AE486274C050C00D6740F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED2AE488274C060800D6740F /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				ED2AE46B274BEBAA00D6740F /* ProfileViewController.swift */,
 				ED2AE47C274BFA6500D6740F /* RegistrationLoginViewController.swift */,
 				ED2AE484274C003D00D6740F /* RegistrationPasswordViewController.swift */,
+				ED2AE486274C050C00D6740F /* LoginViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				ED2AE47A274BF85C00D6740F /* AppCoordinator.swift */,
 				ED2AE47E274BFC1900D6740F /* ProfileCoordinator.swift */,
 				ED2AE482274BFE2E00D6740F /* RegistrationCoordinator.swift */,
+				ED2AE488274C060800D6740F /* LoginCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			files = (
 				ED2AE46C274BEBAA00D6740F /* ProfileViewController.swift in Sources */,
 				ED2AE457274BEB1000D6740F /* AppDelegate.swift in Sources */,
+				ED2AE489274C060800D6740F /* LoginCoordinator.swift in Sources */,
 				ED2AE475274BF6BA00D6740F /* Coordinator.swift in Sources */,
 				ED2AE483274BFE2E00D6740F /* RegistrationCoordinator.swift in Sources */,
 				ED2AE481274BFCCD00D6740F /* FlowController.swift in Sources */,
@@ -280,6 +287,7 @@
 				ED2AE485274C003D00D6740F /* RegistrationPasswordViewController.swift in Sources */,
 				ED2AE472274BF48900D6740F /* OutlinedButton.swift in Sources */,
 				ED2AE47F274BFC1900D6740F /* ProfileCoordinator.swift in Sources */,
+				ED2AE487274C050C00D6740F /* LoginViewController.swift in Sources */,
 				ED2AE47B274BF85C00D6740F /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
