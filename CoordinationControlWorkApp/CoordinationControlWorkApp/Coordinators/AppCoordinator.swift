@@ -30,25 +30,25 @@ class AppCoordinator: Coordinator {
 
     func start() {
         if authorizationService.isAuthorized {
-            startMainFlow()
+            showMainFlow()
         } else {
-            startAuthorizationFlow()
+            showAuthorizationFlow()
         }
     }
 
-    private func startAuthorizationFlow() {
+    private func showAuthorizationFlow() {
         let module = ProfileCoordinator(navigationController: navigationController)
         module.flowCompletionHandler = { [weak self] in
             guard let self = self else { return }
 
             self.authorizationService.setIsAuthorized(true)
             self.childDidFinish(module)
-            self.startMainFlow()
+            self.showMainFlow()
         }
 
         module.start()
     }
 
-    private func startMainFlow() {
+    private func showMainFlow() {
     }
 }

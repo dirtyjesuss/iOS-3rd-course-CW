@@ -36,7 +36,16 @@ class ProfileCoordinator: Coordinator {
             guard let self = self else { return }
             switch authType {
             case .signIn:
-                assertionFailure()
+                let module = LoginCoordinator(navigationController: self.navigationController)
+
+                module.flowCompletionHandler = {
+                    self.flowCompletionHandler?()
+                    self.childDidFinish(module)
+                }
+
+                self.childCoordinators.append(module)
+
+                module.start()
             case .signUp:
                 let module = RegistrationCoordinator(navigationController: self.navigationController)
 
